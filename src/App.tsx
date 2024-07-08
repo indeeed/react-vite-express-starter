@@ -3,11 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+import Login from './frontend/Login'
+import SignIn from './frontend/SignIn'
+
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      < Login/>
+      < SignIn />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -21,6 +26,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
